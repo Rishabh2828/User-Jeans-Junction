@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProductDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/AppColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Home"
+            app:titleTextColor="#ffffff"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_category"
+            app:cardCornerRadius="13.00dp"
+            android:elevation="10dp"
+
+            android:layout_marginTop="@dimen/_55sdp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="13.00dp"
+                android:orientation="vertical">
+
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/ivImageSlider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="226.00dp"
+                    app:iss_auto_cycle="false"
+                    app:iss_text_align="CENTER"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/cvProduct"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="13.00dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProductTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Product name"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22.60dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvProductPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:gravity="end"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:ellipsize="end"
+                    android:text="500"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="22.60dp"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvProductSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text="Select Size"
+                android:textColor="@color/black"
+                android:textSize="20.60dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProductSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:layout_constraintTop_toBottomOf="@id/searchCv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+
+            <TextView
+                android:id="@+id/tvProductQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:text="Quantity"
+                android:textColor="@color/black"
+                android:textSize="20.60dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/llProductCount"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/bg_product_count"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tvDecrementCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19.50dp"/>
+
+                <TextView
+                    android:id="@+id/tvProductCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19.50dp"/>
+
+
+
+                <TextView
+                    android:id="@+id/tvIncrementCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19.50dp"/>
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_category"
+                app:cardCornerRadius="13.00dp"
+                android:elevation="10dp"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:text="Product Details"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+                    <TextView
+                        android:id="@+id/productDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:text="Product Details"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:text="Material and Cateorgy"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+                    <TextView
+                        android:id="@+id/productMaterial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:text="Product Material"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+                    <TextView
+                        android:id="@+id/productCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:text="Product Category"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:textStyle="bold"
+                        android:text="Color"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+                    <TextView
+                        android:id="@+id/productColor"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:ellipsize="end"
+                        android:text="Product Color"
+                        android:textColor="@color/black"
+                        android:textSize="20.60dp"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text="Real Images"
+                android:textColor="@color/black"
+                android:textSize="20.60dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_category"
+                app:cardCornerRadius="13.00dp"
+                android:elevation="10dp"
+
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="13.00dp"
+                    android:orientation="vertical">
+
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/ivImageSliderRealPics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="226.00dp"
+                        app:iss_auto_cycle="false"
+                        app:iss_text_align="CENTER"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to cart"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_80sdp"
+                android:textSize="@dimen/_15sdp"
+                app:backgroundTint="@color/green"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

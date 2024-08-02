@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jeans Junction</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com</string>
+
+</resources>

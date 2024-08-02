@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbProfileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/white"
+        android:background="@color/AppColor"
+        app:title="Orders"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_125sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_weight="1"/>
+</LinearLayout>

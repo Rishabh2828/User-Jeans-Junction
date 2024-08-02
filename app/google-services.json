@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "649061820263",
+    "firebase_url": "https://jeans-junction-default-rtdb.firebaseio.com",
+    "project_id": "jeans-junction",
+    "storage_bucket": "jeans-junction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649061820263:android:658be67f9e421b38c971c2",
+        "android_client_info": {
+          "package_name": "com.scout.jeansjunction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649061820263-7d2r8ngssc951p5d6vt2uml5n8i4im2s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scout.jeansjunction",
+            "certificate_hash": "d670812eb77a6042ae064a6ed4f6ae6ef5bd4484"
+          }
+        },
+        {
+          "client_id": "649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw_onkFjX5s8ezRSrKEKZ2IH83yNT0E_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649061820263:android:396cdaf4fe74f3afc971c2",
+        "android_client_info": {
+          "package_name": "com.scoutandguide.jeansjunction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649061820263-ca5n0hiflhfo845oc1pefi49eiov1t82.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scoutandguide.jeansjunction",
+            "certificate_hash": "d670812eb77a6042ae064a6ed4f6ae6ef5bd4484"
+          }
+        },
+        {
+          "client_id": "649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw_onkFjX5s8ezRSrKEKZ2IH83yNT0E_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649061820263:android:56583242eaa9eab7c971c2",
+        "android_client_info": {
+          "package_name": "com.shurish.adminjeansjunction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649061820263-fifarf179kdt3hgr21r0nacdbv6atu4j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shurish.adminjeansjunction",
+            "certificate_hash": "d670812eb77a6042ae064a6ed4f6ae6ef5bd4484"
+          }
+        },
+        {
+          "client_id": "649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw_onkFjX5s8ezRSrKEKZ2IH83yNT0E_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649061820263-9jsltilmt3p8n8r3iurkrqoa1umtbd0p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
